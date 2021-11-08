@@ -44,4 +44,9 @@ public class BillController {
 			return new ResponseEntity<>(e.getLocalizedMessage(),HttpStatus.BAD_REQUEST);
 		}
 	}
+	@GetMapping("/")
+	public String welcome(){
+		
+		return "Welcome to portal";
+	}
 }
